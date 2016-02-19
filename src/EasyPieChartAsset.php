@@ -3,7 +3,11 @@
 namespace braunmar\yii\easyPieChartAsset;
 
 /**
- * 
+ * Easy pie chart asset
+ *
+ * @author Marek Braun
+ * @package braunmar/easypiechart
+ * @see https://github.com/braunmar/easypiechart
  */
 class EasyPieChartAsset extends \yii\web\AssetBundle
 {

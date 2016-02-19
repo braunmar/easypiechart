@@ -27,7 +27,7 @@
         "php": ">=5.4.0",
         "yiisoft/yii2": "~2.0.0",
         "yiisoft/yii2-bootstrap": "~2.0.3",
-        "bower-asset/bootstrap-datepicker": "1.4.0"
+        "bower-asset/jquery.easy-pie-chart": ""
     },
     "autoload": {
         "psr-4": {
