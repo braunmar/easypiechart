@@ -1,5 +1,5 @@
 {
-    "name": "braunmar/yii2-easypiechart",
+    "name": "braunmar/easypiechart",
     "description": "Yii2 easy pie chart",
     "keywords": [
         "braunmar",
@@ -31,7 +31,7 @@
     },
     "autoload": {
         "psr-4": {
-            "braunmar\\easypiechart\\": "src/"
+            "braunmar\\yii2-easypiechart\\": "src/"
         }
     }
 }
