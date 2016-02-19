@@ -1,34 +1,37 @@
 {
-  "name": "braunmar/yii2-easypiechart",
-  "description": "Yii2 easy pie chart",
-  "keywords": [
-    "braunmar",
-    "yii2",
-    "easy-pie-chart",
-    "pie",
-    "chart"
-  ],
-  "type": "yii2-extension",
-  "license": "MIT",
-  "minimum-stability": "dev",
-  "homepage": "https://github.com/braunmar/yii2-easypiechart",
-  "support": {
-    "issues": "https://github.com/braunmar/yii2-easypiechart/issues",
-    "source": "https://github.com/braunmar/yii2-easypiechart"
-  },
-  "authors": [
-    {
-      "name": "Marek Braun",
-      "email": "marra.braun@gmail.com",
-      "homepage": "http://braunmar.cz/"
+    "name": "braunmar/yii2-easypiechart",
+    "description": "Yii2 easy pie chart",
+    "keywords": [
+        "braunmar",
+        "yii2",
+        "easy-pie-chart",
+        "pie",
+        "chart"
+    ],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "homepage": "https://github.com/braunmar/yii2-easypiechart",
+    "support": {
+        "issues": "https://github.com/braunmar/yii2-easypiechart/issues",
+        "source": "https://github.com/braunmar/yii2-easypiechart"
+    },
+    "authors": [
+        {
+            "name": "Marek Braun",
+            "email": "marra.braun@gmail.com",
+            "homepage": "http://braunmar.cz/"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "~2.0.0",
+        "yiisoft/yii2-bootstrap": "~2.0.3",
+        "bower-asset/bootstrap-datepicker": "1.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "braunmar\\easypiechart\\": "src/"
+        }
     }
-  ],
-  "require": {
-    "php": ">=5.4.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "braunmar\\easypiechart\\": "src/"
-    }
-  }
 }
