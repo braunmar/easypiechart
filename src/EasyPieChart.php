@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * @link https://github.com/braunmar/yii2-easypiechart
+ * @copyright Copyright (c) 2016 Marek Braun
+ * @license https://github.com/braunmar/yii2-easypiechart/blob/master/LICENSE
+ */
+
 namespace braunmar\yii\easypiechart;
 
 use yii\base\Widget;
@@ -8,9 +14,10 @@ use yii\helpers\Html;
 /**
  * Easy pie chart for single chart
  *
+ * 
  * @author Marek Braun
- * @package braunmar/easypiechart
- * @see https://github.com/braunmar/easypiechart
+ * @package braunmar/yii2-easypiechart
+ * @see https://github.com/braunmar/yii2-easypiechart
  */
 class EasyPieChart extends Widget
 {
@@ -33,18 +40,30 @@ class EasyPieChart extends Widget
     public $element = 'div';
     
     /**
+     * Content of element
+     * @var string 
+     */
+    public $content = '';
+    
+    /**
      * Element id prefix
      * @var string
      */
     public $dataIdPrefix = 'pie-chart-';
     
-    public function init()
+    /**
+     * Run widget
+     * @return string
+     */
+    public function run()
     {
         $id = $this->dataIdPrefix . $this->id;
-        $html = Html::tag($this->element, '', array_merge($this->options, ['data-chart-id' => $id]));
+        $html = Html::tag($this->element, $this->content, array_merge($this->options, ['data-chart-id' => $id]));
         
         $pluginOptions = json_encode($this->pluginOptions);
-        $this->view->registerJs("$('[data-chart-id='{$id}']').easyPieChart({$pluginOptions});");
+        $this->view->registerJs("$('[data-chart-id=\"{$id}\"]').easyPieChart({$pluginOptions});");
+        
+        EasyPieChartAsset::register($this->view);
         
         return $html;
     }
